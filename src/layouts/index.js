@@ -68,6 +68,7 @@ const DefaultLayout = (props) => {
     metadata: { publishedBranches, slugToTitle, title, toctree },
     page,
     slug,
+    repoBranches,
     template,
   } = pageContext;
   const { sidenav } = getTemplate(project, slug, template);
@@ -86,6 +87,7 @@ const DefaultLayout = (props) => {
               page={page}
               pageTitle={pageTitle}
               publishedBranches={publishedBranches}
+              repoBranches={repoBranches}
               siteTitle={title}
               slug={slug}
               toctree={toctree}
